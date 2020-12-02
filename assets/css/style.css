@@ -555,8 +555,22 @@ body {
   z-index: 1;
 }
 
-.car-items-colour-block__caption {
+.car-items-colour-block__name {
+  padding-top: 10px;
   text-align: center;
+  font-size: 1.5rem;
+}
+
+.car-items-colour-block__caption {
+  margin: 40px 0;
+}
+
+.car-items-colour-block__list {
+  list-style: none;
+}
+
+.car-items-colour-block__list li {
+  margin: 10px 0;
 }
 
 .main-btn {
@@ -727,4 +741,8 @@ body {
 
 .marvellous-metallics-colour-items {
   top: 140%;
+}
+
+.marvellous-metallics-colour-items-block__link {
+  bottom: -15%;
 }

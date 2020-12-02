@@ -66,8 +66,22 @@ body {
       z-index: 1;
     }
 
-    &__caption {
+    &__name {
+      padding-top: 10px;
       text-align: center;
+      font-size: 1.5rem;
+    }
+
+    &__caption {
+      margin: 40px 0;
+    }
+
+    &__list {
+      list-style: none;
+
+      li {
+        margin: 10px 0;
+      }
     }
   }
 }
