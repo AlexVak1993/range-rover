@@ -1,0 +1,12 @@
+
+@mixin gray-before-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 280px;
+  height: 20px;
+  transform: translateY(-50%);
+  background-color: $color-fill;
+}
+

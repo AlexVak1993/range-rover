@@ -1,0 +1,9 @@
+%parent-container {
+  min-width: $xl;
+  margin: auto;
+}
+
+%child-container {
+  min-width: $content-container;
+  margin: auto;
+}

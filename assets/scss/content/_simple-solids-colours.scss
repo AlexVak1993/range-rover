@@ -1,0 +1,33 @@
+.simple-solids-colour {
+  position: relative;
+  min-height: 160vh;
+
+  &-image {
+    min-height: 130vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  &-container {
+    top: 30%;
+  }
+
+  &-description {
+    & p:last-child {
+      padding-top: 30px;
+    }
+  }
+
+  &-items {
+    top: 114%;
+
+    &-block__link {
+      bottom: -50%;
+    }
+  }
+}
