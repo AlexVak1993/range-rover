@@ -1,0 +1,43 @@
+.colour-variant {
+
+  &-description {
+    padding: 40px 0;
+  }
+
+  &-heading {
+    margin-top: 40px;
+    padding-left: 0;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+  }
+
+  &-block {
+    width: 110px;
+    padding: 14px;
+    // flex: 0 0 16.66%;
+
+    &__item {
+      height: 110px;
+      background-color: red;
+    }
+
+    &__name {
+      margin-top: 15px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+
+  &-link {
+    margin: 100px 0;
+  }
+}

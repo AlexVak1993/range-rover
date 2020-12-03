@@ -4,14 +4,17 @@
 @import "skin";
 @import "variables";
 @import "media-mixins";
-@import "mixins";
 @import "extends";
 
 
 @import "common";
 
 @import "hero";
-@import "content/range-rover-presentation-section";
+@import "content/presentation-section";
 @import "content/caption-about-colours";
-@import "content/simple-solids-colours";
-@import "content/marvellous-metallics-colour";
+@import "content/simple-colours";
+@import "content/marvellous-colour";
+@import "content/premium-colour";
+@import "content/special-colour";
+@import "content/colour_variant";
+@import "footer";

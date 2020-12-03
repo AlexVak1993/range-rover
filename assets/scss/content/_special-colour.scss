@@ -1,0 +1,14 @@
+.special-colour {
+  padding-top: 125px;
+  padding-bottom: 140px;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  &-description {
+    width: 65%;
+
+    h2 {
+      padding-bottom: 0;
+    }
+  }
+}
