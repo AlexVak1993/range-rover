@@ -4,25 +4,53 @@
   padding-bottom: 170px;
 
   &__content {
-    min-width: 475px;
+    @include md-min {
+      min-width: 475px;
+    }
 
     &::before {
       content: "RANGE ROVER COLOURS";
       text-align: center;
-      font-size: 1.25rem;
       letter-spacing: 0.15em;
-      padding: 15px 0;
-      width: 70%;
       font-weight: 500;
       color: white;
+
+      @include md-min {
+        font-size: 1.25rem;
+        padding: 15px 0;
+        width: 70%;
+      }
+      @include md {
+        font-size: 1rem;
+        padding: 10px;
+        width: 60%;
+      }
     }
   }
 
   &__slogan {
     padding: 0 25px 15px;
-    font-size: 3.7rem;
     font-weight: 500;
-    line-height: 62px;
     opacity: 0.85;
+
+    @include lg-min {
+      font-size: 3.7rem;
+      line-height: 62px;
+    }
+    @include lg-md {
+      font-size: 3.2rem;
+      line-height: 50px;
+    }
+    @include md {
+      text-align: center;
+    }
+    @include md-sm {
+      font-size: 2.5rem;
+      line-height: 35px;
+    }
+    @include sm {
+      font-size: 1.5rem;
+      line-height: 30px;
+    }
   }
 }

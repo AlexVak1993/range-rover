@@ -9,6 +9,10 @@
       text-align: center;
       color: $color-bg;
       font-weight: 300;
+
+      @include md {
+        padding: 0 40px;
+      }
     }
   }
 }

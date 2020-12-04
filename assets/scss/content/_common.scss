@@ -11,14 +11,18 @@ body {
 }
 
 .cars__btn {
-  font-size: 0.875rem;
   font-weight: 300;
-  border: 2px solid $color-fill;
-  padding: 20px;
   // margin-top: auto;
   text-decoration: none;
   color: $color-fill;
   transition: all 0.2s;
+
+  @include md-min {
+    padding: 20px;
+    border: 2px solid $color-fill;
+    font-size: 0.875rem;
+  }
+
   &:hover,
   &:focus {
     background-color: $color-fill;

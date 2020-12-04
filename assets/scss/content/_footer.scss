@@ -28,7 +28,12 @@
     margin-bottom: 90px;
     z-index: 3;
     a {
-      background-color: 2hite;
+      background-color: white;
+
+      @include md {
+        border: 2px solid $color-fill;
+        padding: 10px;
+      }
     }
   }
 

@@ -1,21 +1,51 @@
 .content-container {
   display: flex;
   flex-direction: column;
-  max-width: $content-container;
   margin: auto;
+
+  @include lg-min {
+    max-width: 800px;
+  }
+  @include lg-md {
+    max-width: calc(800px - 50px);
+  }
+  @include md {
+    align-items: center;
+  }
 
   &__description {
     position: relative;
-    width: calc(50% - 50px);
     padding: 40px 20px 30px 20px;
     opacity: 0.85;
     background-color: $color-bg;
 
+    @include md-min {
+      width: calc(50% - 50px);
+    }
+    @include md-sm {
+      width: 70%;
+    }
+    @include sm {
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: center;
+    }
+
     h2 {
-      font-size: 3rem;
+      padding-bottom: 30px;
       font-weight: 500;
       line-height: 48px;
-      padding-bottom: 30px;
+
+      @include lg-min {
+        font-size: 3rem;
+      }
+      @include lg-md {
+        font-size: 2.5rem;
+      }
+      @include md {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
 
     p {
@@ -23,6 +53,10 @@
       font-weight: 300;
       &:last-child {
         padding-top: 30px;
+      }
+
+      @include sm {
+        line-height: 20px;
       }
     }
 

@@ -18,10 +18,7 @@ body {
 }
 
 .cars__btn {
-  font-size: 0.875rem;
   font-weight: 300;
-  border: 2px solid #54616b;
-  padding: 20px;
   text-decoration: none;
   color: #54616b;
   -webkit-transition: all 0.2s;
@@ -42,23 +39,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 800px;
   margin: auto;
 }
 
 .content-container__description {
   position: relative;
-  width: calc(50% - 50px);
   padding: 40px 20px 30px 20px;
   opacity: 0.85;
   background-color: #ffffff;
 }
 
 .content-container__description h2 {
-  font-size: 3rem;
+  padding-bottom: 30px;
   font-weight: 500;
   line-height: 48px;
-  padding-bottom: 30px;
 }
 
 .content-container__description p {
@@ -89,26 +83,17 @@ body {
   padding-bottom: 170px;
 }
 
-.hero__content {
-  min-width: 475px;
-}
-
 .hero__content::before {
   content: "RANGE ROVER COLOURS";
   text-align: center;
-  font-size: 1.25rem;
   letter-spacing: 0.15em;
-  padding: 15px 0;
-  width: 70%;
   font-weight: 500;
   color: white;
 }
 
 .hero__slogan {
   padding: 0 25px 15px;
-  font-size: 3.7rem;
   font-weight: 500;
-  line-height: 62px;
   opacity: 0.85;
 }
 
@@ -162,22 +147,15 @@ body {
 }
 
 .cars__color {
-  max-width: 800px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -100px;
 }
 
 .cars__color-block {
-  width: calc(50% - 10px);
-  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,13 +168,14 @@ body {
 .cars__color-block figure {
   margin: 0;
   margin-bottom: 50px;
-  position: relative;
+}
+
+.cars__color-block__image {
+  max-width: 100%;
 }
 
 .cars__color-block__gradient {
   position: absolute;
-  width: 82px;
-  height: 82px;
   -webkit-transform: translateX(20%) translateY(-52%);
       -ms-transform: translateX(20%) translateY(-52%);
           transform: translateX(20%) translateY(-52%);
@@ -207,18 +186,14 @@ body {
 .cars__color-block__name {
   padding-top: 10px;
   margin-left: auto;
-  width: 70%;
-  font-size: 1.5rem;
 }
 
 .cars__color-block__caption {
-  margin: 30px 0 30px 0;
   font-weight: 300;
 }
 
 .cars__color-block__list {
   list-style: none;
-  margin-bottom: 60px;
 }
 
 .cars__color-block__list li {
@@ -320,7 +295,7 @@ body {
 }
 
 .color__palette_description {
-  padding: 40px 0;
+  font-weight: 400;
 }
 
 .color__palette_heading {
@@ -339,7 +314,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -14px;
 }
 
 .color__palette_wrapper_metallic .color__palette_block:nth-child(1) .color__palette_block__item {
@@ -463,22 +437,13 @@ body {
 }
 
 .color__palette_block {
-  width: 110px;
   padding: 14px;
-}
-
-.color__palette_block__item {
-  height: 110px;
 }
 
 .color__palette_block__name {
   margin-top: 15px;
   font-weight: 300;
   line-height: 18px;
-}
-
-.color__palette_link {
-  margin: 100px 0;
 }
 
 .footer {
@@ -514,7 +479,7 @@ body {
 }
 
 .footer__btn a {
-  background-color: 2hite;
+  background-color: white;
 }
 
 .footer__avaible {
@@ -525,4 +490,223 @@ body {
 .footer__avaible p {
   color: white;
   font-size: 0.875rem;
+}
+
+@media (min-width: 425px) {
+  .cars__color {
+    margin-top: -100px;
+  }
+  .cars__color-block {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 769px) {
+  .cars__btn {
+    padding: 20px;
+    border: 2px solid #54616b;
+    font-size: 0.875rem;
+  }
+  .content-container__description {
+    width: calc(50% - 50px);
+  }
+  .hero__content {
+    min-width: 475px;
+  }
+  .hero__content::before {
+    font-size: 1.25rem;
+    padding: 15px 0;
+    width: 70%;
+  }
+  .cars__color {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cars__color-block {
+    width: calc(50% - 10px);
+  }
+  .cars__color-block__gradient {
+    width: 82px;
+    height: 82px;
+  }
+  .cars__color-block__name {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .cars__color-block__caption {
+    margin: 30px 0;
+  }
+  .cars__color-block__list {
+    margin-bottom: 60px;
+  }
+  .color__palette_description {
+    padding: 40px 0;
+  }
+  .color__palette_wrapper {
+    margin: 0 -14px;
+  }
+  .color__palette_link {
+    margin: 100px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-container {
+    max-width: 800px;
+  }
+  .content-container__description h2 {
+    font-size: 3rem;
+  }
+  .hero__slogan {
+    font-size: 3.7rem;
+    line-height: 62px;
+  }
+  .cars__color {
+    max-width: 800px;
+  }
+  .color__palette_block {
+    width: 110px;
+  }
+  .color__palette_block__item {
+    min-height: 111px;
+  }
+}
+
+@media (max-width: 1023.8px) {
+  .color__palette_block {
+    width: 101px;
+  }
+  .color__palette_block__item {
+    min-height: 101px;
+  }
+}
+
+@media (max-width: 1023.8px) and (min-width: 769px) {
+  .content-container {
+    max-width: calc(800px - 50px);
+  }
+  .content-container__description h2 {
+    font-size: 2.5rem;
+  }
+  .hero__slogan {
+    font-size: 3.2rem;
+    line-height: 50px;
+  }
+  .cars__color {
+    max-width: calc(800px - 50px);
+  }
+}
+
+@media (max-width: 768.8px) {
+  .content-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-container__description h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero__content::before {
+    font-size: 1rem;
+    padding: 10px;
+    width: 60%;
+  }
+  .hero__slogan {
+    text-align: center;
+  }
+  .cars__color {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cars__color-block__gradient {
+    width: 60px;
+    height: 60px;
+  }
+  .cars__color-block__name {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+  .cars__color-block__caption {
+    margin-bottom: 30px;
+  }
+  .cars__color-block__list {
+    margin-bottom: 40px;
+  }
+  .cars__color-block__link {
+    border: 2px solid #54616b;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .caption-colors-container p {
+    padding: 0 40px;
+  }
+  .color__palette_description {
+    padding: 40px;
+    text-align: center;
+  }
+  .color__palette_heading {
+    text-align: center;
+  }
+  .color__palette_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .color__palette_block__name {
+    text-align: center;
+  }
+  .color__palette_link {
+    margin: 40px 0;
+    border: 2px solid #54616b;
+    padding: 10px;
+  }
+  .footer__btn a {
+    border: 2px solid #54616b;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768.8px) and (min-width: 425px) {
+  .content-container__description {
+    width: 70%;
+  }
+  .hero__slogan {
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  .cars__color-block {
+    width: calc(50% - 30px);
+  }
+  .color__palette_heading::before {
+    width: 60%;
+    -webkit-transform: translateX(30%);
+        -ms-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+}
+
+@media (max-width: 424.8px) {
+  .content-container__description {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+  }
+  .content-container__description p {
+    line-height: 20px;
+  }
+  .hero__slogan {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .cars__color {
+    margin-top: -70px;
+  }
+  .cars__color-block {
+    margin: 0 30px 50px 30px;
+  }
+  .color__palette_heading::before {
+    width: 100%;
+  }
 }
