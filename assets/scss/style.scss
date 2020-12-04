@@ -1,20 +1,15 @@
-@import "../../libs/normalize-scss-7.0.0/sass/normalize/import-now";
 
-
-@import "skin";
 @import "variables";
 @import "media-mixins";
-@import "extends";
 
+@import "content/common";
+@import "content/content-container";
 
-@import "common";
+@import "content/hero";
 
-@import "hero";
-@import "content/presentation-section";
-@import "content/caption-about-colours";
-@import "content/simple-colours";
-@import "content/marvellous-colour";
-@import "content/premium-colour";
-@import "content/special-colour";
-@import "content/colour_variant";
-@import "footer";
+@import "content/cars__brick";
+@import "content/cars__color";
+@import "content/caption-colors";
+@import "content/color__palette";
+
+@import "content/footer";

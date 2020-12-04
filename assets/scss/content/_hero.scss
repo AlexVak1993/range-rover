@@ -1,0 +1,28 @@
+.hero {
+  background-image: url(../img/RR-Hero-Img.png);
+  padding-top: 140px;
+  padding-bottom: 170px;
+
+  &__content {
+    min-width: 475px;
+
+    &::before {
+      content: "RANGE ROVER COLOURS";
+      text-align: center;
+      font-size: 1.25rem;
+      letter-spacing: 0.15em;
+      padding: 15px 0;
+      width: 70%;
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  &__slogan {
+    padding: 0 25px 15px;
+    font-size: 3.7rem;
+    font-weight: 500;
+    line-height: 62px;
+    opacity: 0.85;
+  }
+}

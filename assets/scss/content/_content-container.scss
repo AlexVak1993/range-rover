@@ -1,0 +1,40 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: $content-container;
+  margin: auto;
+
+  &__description {
+    position: relative;
+    width: calc(50% - 50px);
+    padding: 40px 20px 30px 20px;
+    opacity: 0.85;
+    background-color: $color-bg;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 48px;
+      padding-bottom: 30px;
+    }
+
+    p {
+      line-height: 26px;
+      font-weight: 300;
+      &:last-child {
+        padding-top: 30px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 80%;
+      height: 20px;
+      transform: translateY(-50%);
+      background-color: $color-fill;
+    }
+  }
+}

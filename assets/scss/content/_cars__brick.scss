@@ -1,0 +1,46 @@
+.cars__brick {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &_presentation {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background-image: url(../img/range-rover-presentation.png);
+    background-color: #afd5ef;
+  }
+
+  &_simple {
+    padding-top: 125px;
+    padding-bottom: 190px;
+    background-image: url(../img/simple-solid-colours.png);
+    background-color: #dfe5ea;
+  }
+
+  &_marvellous {
+    padding-top: 100px;
+    padding-bottom: 250px;
+    background-image: url(../img/marvellous-metallics-colour.png);
+    background-color: #1a212b;
+  }
+
+  &_premium {
+    padding-top: 80px;
+    padding-bottom: 180px;
+    background-image: url(../img/premium-colour.png);
+    background-color: #b4c7de;
+  }
+
+  &_palette {
+    padding-top: 125px;
+    padding-bottom: 140px;
+    background-image: url(../img/palette_colour.png);
+    background-color: #C2CCD7;
+    &__description {
+      width: 65%;
+      h2 {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
